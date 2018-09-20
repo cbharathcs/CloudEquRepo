@@ -1,0 +1,8 @@
+server:
+  port: 8282
+
+cloudant:
+  db: xxxx
+  username: xxxx
+  password: xxxx
+  url: xxxxx

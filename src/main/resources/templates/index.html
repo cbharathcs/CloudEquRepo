@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<title>Equipment Details</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
+</head>
+<body bgcolor="white">
+<div class="container">
+<div class="row">
+	
+	 <div class="form-group">
+	                    <label for="limit">Limit Number</label>
+	                    <input name="limit" id="limit" class="form-control"/>
+	                     <button class="btn btn-default" id="limitButton" name = "limitButton">limit</button>
+	  </div>
+	   <div class="form-group">
+	                    <label for="equipmentID">Equipment Number</label>
+	                    <input name="equipmentID" id="equipmentID" class="form-control"/>
+	                     <button class="btn btn-default" id="equipmentButton" name = "limitButton">equipmentID</button>
+	  </div>
+	
+</div>
+    <div class="row">
+        <div class="col-md-3">
+           
+                 <form id="addForm">
+                 <div class="form-group">
+                    <label for="_id">Equipment Number</label>
+                    <input name="_id" id="_id" class="form-control"/>
+                </div>
+                 <div class="form-group">
+                    <label for="address">Address</label>
+                    <input name="address" id="address" class="form-control"/>
+                </div>
+                 <div class="form-group">
+                    <label for="contractStDate">Start Date</label>
+                    <input name="contractStDate" id="contractStDate" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="contractEndDate">End Date</label>
+                    <input name="contractEndDate" id="contractEndDate" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select name="status" id="status"  class="form-control"> <option value="y">Yes</option><option value="n">No</option></select>
+                </div>
+                <button class="btn btn-default" id="addButton" name = "addButton">Add</button>
+           </form>
+           
+           <button class="btn btn-default" id="refreshButton" name = "refreshButton">Refresh</button>
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table table-hover" id="mainTable">
+                <thead>
+                    <tr>
+                        <th>Equipment Number</th>
+                        <th>Address</th>
+                        <th>Contract Start Date</th>
+                        <th>Contract End Date</th>
+                        <th>Active Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>

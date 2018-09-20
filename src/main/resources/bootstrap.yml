@@ -1,0 +1,8 @@
+--
+spring:
+  application:
+    name: equipment-details
+  cloud:
+    config:
+      discovery:
+        enabled: false
